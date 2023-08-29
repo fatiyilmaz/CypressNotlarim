@@ -1,0 +1,40 @@
+Tanim:
+Cypress JavaScript dili kullanarak test otomasyonu yapan bir framework.
+JavaScript tabanli bir test araci.
+DOM teknigi kullanilir.
+Mocha, Chai gibi test araclari icinde barindirir, bir cok method ve ozelligi barindirir. JavaScript frameworkleridir bunlar.
+NodeJS hata izlemeyi kolaylastirir.
+
+Cypress Avantajlari:
+1 Time Travel: Testler uzerinde tek tek gezinebiliyor.
+2 Hata Ayiklanabilirlik: Okunabilir hata mesajlari.
+3 Aninda Yukleme: Kod yazarken kodlarin aninda calismasi. Hata varsa gosteriyor. 
+4 Otomatik Bekleme: Default olarak bekleme sureleri var kendisi otomatik yapiyor.
+5 Spies, Stubs and Clocks: Islevlerin, sunucu yanitlarinin veya zamanlayicilarin davranisini dogrulayin ve kontrol edin.
+6 Ağ Kontrolu: Kodlarin calismasi sirasinda HTTP Status Code'larini goruyoruz.
+7 Tutarli Sonuclar: Hizli, tutarli ve guvenilir.
+8 Ekran Goruntusu ve Videolar: Fail de otomatik olarak alir.
+Ve Dashboard: Testler burada yuklenir ve calistirilir. 
+
+Kurulum:
+https://www.cypress.io/ -> Cypressin kendi resmi sitesi dokumanlar bulunur.
+https://npmtrends.com/cypress -> Cypressin gelisimi gorulebilir.
+1 Node.Js -> https://nodejs.org/en/
+2 Visual Studio Code -> https://visualstudio.com/
+Intellij'de istege gore kullanilabilir.
+3 Cypress 11.2.0 
+npm cypress install
+npm install --save dev cypress 
+npm install cypress-xpath --save-dev
+e2e - support - e2e.js icerisine; import 'cypress-xpath' ekliyoruz.
+package.json da dependency'ler eklenir.
+Terminal'e npm install deriz. Her sey node_modules'e eklenir.
+node_modules yoksa calismaz.
+npm install calismazsa -> npm install --force kullaniriz.
+
+Kullanim:
+npx cypress open ile cypress acilir.
+describe -> Test Case
+it -> Step
+cy.visit() -> Bir sayfayi ziyaret etmek icin kullanilir.
+
